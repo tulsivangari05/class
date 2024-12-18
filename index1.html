@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Num1 <input type="text" id="n1">
+   Num2 <input type="text" id="n2"><br>
+   <button onclick="add()">=</button> -->
+   <!-- Number<input type="text" id="num"><br>
+   <button onclick="table()">Table</button> -->
+   <!-- Number<input type="text" id="num"><br>
+   <button onclick="factors()">Factors</button>
+   Number<input type="text" id="n"><br>
+   <button onclick="armstrong()">Armstrong</button> -->
+   <!-- <button onclick="operation(5,5)">Click</button> -->
+    <!-- Number1<input type="text" id="num"><br>
+    Number2<input type="text" id="num1"><br>
+   <button onclick="number()">Click</button> -->
+   <!-- password<input type="text" id="pass"><br>
+   confirm_password<input type="text" id="c_pass"><br>
+   <button onclick="web()">Submit</button> -->
+   String name <input type="text" id="str"><br>
+   index<input type="number" id="num">
+   <button onclick="string()">Click</button>
+
+    <script>
+        
+       //function add(){
+       //     var c;
+       //     var a= document.getElementById("n1").value;
+       //     var b= document.getElementById("n2").value;
+       //     c= Number(a)+Number(b)
+       //     document.write(c,"<br>");
+       // }
+//         function table(){
+//         var j=document.getElementById("num").value;
+//          for(i=1;i<=10;i++){
+//         document.writeln(Number(j)*i,"<br>")
+//   }
+// }
+// A NO. IS DIVISIBLE BY HOW MANY N0.s
+// function factors(){
+//     var a= document.getElementById("num").value;
+//     for(i=1;i<=a;i++){
+//     if(Number(a)%i==0){
+//         document.write(i,'<br>')
+//     }
+// }
+// }
+//ARMSTRONG NO.
+// function armstrong(){
+// var num= "153"
+// var sum=0
+// power= num.length;
+// for(n in num){
+//     sum=sum+Number(num[n])**power;
+// document.writeln(sum,"<br>")
+// }
+// if(Number(num)==sum){
+//     document.writeln("Armstrong number")
+// }
+// else{
+//     document.writeln("Not a armstrong number")
+// }
+// }
+//WHILE TRUE(PASSWORD)
+// var a=5555;
+// while(true){
+//     var c=prompt("enter the number: ")
+//     if(c==a){
+//         break;
+// }
+// }
+//NESTED FOR LOOP
+// for(i=1;i<=5;i++){
+//     for(j=1;j<=5;j++){
+//         document.writeln(j,"<br>")
+// }
+// {
+//     document.writeln(i,"<br>")
+// }}
+// function operation(a,b){
+// var c= a+b;
+// document.writeln(c);
+// }
+// function number(){
+//   var a= document.getElementById("num").value;
+//   var b= document.getElementById("num1").value;
+//   if(Number(a)>Number(b)){
+//     document.write(a,"is greater than ",b);
+// }
+//   else{
+//     document.write(b,"is greater than ",a);
+// }
+// }
+//alert("Notes");
+// var m= confirm("are you sure");
+//     console.log(x);
+// var a= prompt("Username");
+// console.log(a);
+// for(a=i;i<=3;i++){
+//     document.writeln(a,"<br>");
+// }
+// let password=123;
+// var pass=prompt("enter the password");
+// if(pass==password){
+//     document.writeln("Access granted");
+
+
+//}
+// else{
+//     while(true){
+//         var p=prompt("enter the password again")
+//         if(p==password){
+//             document.writeln("Access granted");
+//             break;
+//         }
+//     }
+// }
+// var age= confirm("Are you complete 18");
+// if(age==true){
+//     var a= prompt("Enter you license");
+// }
+// else{
+//     alert("you are not eligible");
+// } 
+// function web(){
+   //var age= confirm("Are you above 18?");
+   // if(age==true){
+   //     window.open("https://web.whatsapp.com/")
+   // }
+//     var a= prompt("Enter your age:");
+//     if(a>=18){
+//         window.open("https://web.whatsapp.com/")
+//     }
+//     else{
+//         window.setTimeout(alert("You are not eligible"),5000);
+//     }
+// }
+// window.setTimeout(alert("You are not eligible"),100000000);
+
+
+function web(){    //the pop-up will be shown after 5s
+    alert("Hello")
+}
+window.setTimeout(web,5000);
+function web(){
+    var p= document.getElementById(pass).value;
+    var c= document.getElementById(c_pass).value;
+    for(i in p){
+        if(pass.length==8 && p[i]==c[i]){
+            window.open("https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=AcMMx-fJNR6IfP1zpyn2qkIPkAG7ZS1n92ITvkKNRqfVuyM4e9-dF8Tgs7pQgj2_m8My8iz81LGOXA&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin://web.whatsapp.com/");
+        }
+        else{
+            alert("Enter 8 character password")
+        }
+    }
+}
+// function web(){
+//     var pass1= document.getElementById("pass").value;
+//     var c_pass= document.getElementById("c_pass").value;
+//     if(pass1.length!=8 ){
+//         alert("Enter 8 character password")
+//     }
+//     else{
+//         if(pass1==c_pass){
+//         window.open("https://web.whatsapp.com/")
+//     }
+//       else{
+//         alert("Password and confirm password should be same")
+
+
+//     }
+// }
+// }
+// function string(){
+//    var s= document.getElementById("str").value;
+//    var n= document.getElementById("num").value;
+//    document.write(s[n]);
+// }
+//    </script>
+// </body>
+// </html>
+
+
+<!-- let a=[2,5,3,9,1]
+// a.pop()  //neglects last object
+// document.write(a,"<br>");
+// a.sort()
+// document.write(a,"<br>")
+// a.push(6)
+// document.write(a,"<br>") //adds the obect at the end
+// b=a.slice(1,4)
+// document.write(b)  //shows the object from 1 to 4 index value
+// a.reverse()
+// document.write(a)
+
+
+// let l= []
+// a=prompt("How many elements do you want?");
+// for(i=0;i<a;i++){
+//     l.push(prompt("Enter the element"))
+// }
+// document.write(l); 
+
+
+// let a= [1,5,6,9]   //showing the common objects in op
+// let b= [1,3,9,6]
+// for(i in a){
+//     for(j in b){
+//         if (a[i]==b[j]){
+//             document.write(a[i]," ");
+//         }
+//     }
+// }
+
+
+// function string1(){
+// let a= document.getElementById("str1").value;
+// let b= document.getElementById("str2").value;
+// for(i in a){
+//     for(j in b){
+//         if(a[i]==b[j]){
+//             document.write(a[i],"<br>");
+//         }
+// }
+// }}
+
+
+//  let x= prompt("Enter string 1: ")
+//  let y= prompt("Enter string 2: ")
+//  for(i in x){
+//     for(j in y){
+//         if(x[i]==y[j]){
+//             document.write(x[i]);
+//         }
+//  }}
+
+
+//let a= "javascript"
+// x= a.split("a");
+// document.write(x);
+// x= a.replace("a","s");
+// document.write(x);
+// x= a.toUpperCase();
+// document.write(x);
+// x= a.toLocaleLowerCase();
+// document.write(x);
+// x= a.concat("hello");
+// document.write(x);
+// x= a.endsWith('t');  //if ends with t then its true if not false
+// document.write(x);
+
+
+let x= prompt("Enter string")  //replace
+let y= prompt("Enter string")
+let replace= prompt("Enter string")
+let re= x.replace(y,replace)
+document.write(re) -->
+
+    </script>
+</body>
+</html>

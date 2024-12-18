@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <button onclick="c1.add()">add</button>
+    <button onclick="c1.show()">Current No.</button> -->
+</head>
+<style>
+    /* .container{
+        background-color: rgb(59, 59, 205); 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+    .item{
+        background-color:rgb(34, 147, 192);
+        border: dotted black;
+    } */
+    /* .container1{
+        height: 5cm;
+        width: 5cm;
+        background-color: rgb(233, 39, 9);
+        transform-style: preserve-3d;
+     }
+    .box{
+        height: 5cm;
+        width: 5cm;
+        background-color: brown;
+        transform-style: preserve-3d;
+        transition: 2s;
+    }
+    .box:hover{
+        transform: rotateX(45deg) rotateY(45deg)
+        translate3d(50px,50px,50px);
+    } */
+    
+    /* .container2{
+        height: 9cm;
+        width: 100%;
+        background-color: beige;
+    }
+    div{
+        height: 2cm;
+        width: 2cm;
+        border: solid black;
+    }
+    .s1{background-color: chocolate;}
+    .s2{background-color: rgb(191, 52, 44);}
+    .s3{background-color: rgb(30, 210, 63);}
+    .s4{background-color: rgb(30, 135, 210);}
+
+    .s1:hover{
+        width:80%;
+        transform: scale();
+        transition: 2s;
+    }
+    .s2:hover{
+        width:40%;
+        transform: scale();
+        transition: 2s;
+    }
+    .s3:hover{
+        width:75%;
+        transform: scale();
+        transition: 2s;
+    }
+    .s4:hover{
+        width:60%;
+        transform: scale();
+        transition: 2s;
+    } */
+    
+</style>
+<body>
+    <!-- <div class="container2">
+        <div class="s1">Python</div>
+        <div class="s2">JS</div>
+        <div class="s3">Java</div>
+        <div class="s4">html</div>
+    </div> -->
+
+    <!-- <div class="container1">
+    <div class="box">box</div></div> -->
+
+    <!-- <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div> -->
+
+    <!-- <button onclick="fact()">Factorial</button> -->
+    <!-- <style>
+        div{
+            border: solid black;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+
+    <div id="red1" onclick="box1()">red</div>
+    <div id="yellow1" onclick="box2()">yellow</div>
+    <div id="green1" onclick="box3()">green</div>
+    <div id="blue1" onclick="box4()">blue</div>
+    <div id="pink1" onclick="box5()">pink</div> -->
+
+    <script>
+        // function box1(){    //colouring the grid box after a click
+        //     document.getElementById("red1").style.backgroundColor="red";
+        // }
+        // function box2(){
+        //     document.getElementById("yellow1").style.backgroundColor="yellow";
+        // }
+        // function box3(){
+        //     document.getElementById("green1").style.backgroundColor="green";
+        // }
+        // function box4(){
+        //     document.getElementById("blue1").style.backgroundColor="blue";
+        // }
+        // function box5(){
+        //     document.getElementById("pink1").style.backgroundColor="pink";
+        // }
+        
+        //(<button onclick="fact()">Factorial</button>)
+        //function fact(){    //factorial using while loop
+        //     let a=prompt("Enter the factorial no.: ");
+        //     let i=1;
+        //     let f=1;
+        //     while(i<=a){
+        //         f=f*i;
+        //         i++;
+        //     }
+        //     document.write(f);
+        // }
+        
+        // let a=prompt("Enter the no: ")    //using css
+        // if(a>0){
+        //     document.body.style.backgroundColor="yellow";
+        // }
+        // else{
+        //     document.body.style.backgroundColor="red";
+        // }
+
+        // let a=prompt("Enter the password: ");   //CREATING PASSWORD USING IF, ELSE LOOP
+        // if(a.length!=8){
+        //     document.write("password must have 8 characters");
+        // }
+        // else{
+        //     document.write("Password is valid");
+        // }
+        
+        // class pass{                             //CREATING PASSWORD USING OOPS 
+        //     constructor(password){
+        //         this.p1=password
+        //     }
+        //     show(){
+        //         document.write("Password is valid")
+        //     }
+        // }
+        // password=prompt("Enter the password: ");
+        // if(password.length==8){
+        //     var b=new pass()
+        //     b.show()
+        // }
+        // else{
+        //     document.write("password must have 8 characters");
+        // }
+
+        // let a=prompt("enter your age: ");          //USING IF, ELSE LOOP
+        // if(a<0){
+        //     document.write("age is invalid")
+        // }
+        // else{
+        //     document.write("age is valid")
+        // }
+        
+        // let a=prompt("enter a no.");
+        // while(a>0){
+        //     let b=alert("do u want to add?")
+        //         if(b==true){
+        //             prompt("enter another no.")
+        //         }
+        //         else{
+        //             document.write("end")
+        //         }
+        //     }
+        
+        
+        
+        // class create{
+        //     constructor(){
+        //         this.num=0;
+        //     }
+        // add(){
+        //     const a=prompt("enter a no.: ")
+        //     this.num+=Number(a);
+        // }
+        // show(){
+        //     alert("current number is "+this.num);
+        // }
+        // }
+        // var c1=new create()
+
+        l=[2,'p','9',5,10,'q','r',0];
+        l1=[]
+        l2=[]
+        for(i in l){
+            if(typeof l[i]==="string"){
+               l1.push(l[i])
+            }
+            else{
+                l2.push(l[i])
+            }
+
+        }
+        document.write(l1);
+        document.write(l2);
+
+        // Fibonacci series:
+        // 0, 1
+        // 0
+        // 1=0+1
+        // 2=1+1
+        // 3=2+1
+        //4=3+1
+
+        let l=[0,1];
+        while(l.length<15){
+            l.push(l[l.length-1]+l(l.length-2));
+            //1=2-1+2-2=l[2-1]+l[2-2]=1+0=1
+            //2=l[3-1]+l[3-2]=1+1=2
+            //3=4-1+4-2=3+2
+        }
+        document.write(l);
+
+
+
+
+    </script>
+</body>
+</html>
